@@ -1,0 +1,35 @@
+//MOVIE Card
+.movie-card{
+    font-family: 'Dongle', sans-serif;
+    font-size: 16pt;
+    cursor: pointer;
+    margin: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border: 0px outset black;
+    height: 25px;
+    width: fit-content;
+    color: rgb(184, 122, 8);
+    background-color: rgb(44, 38, 38);
+    border-radius: 14px;
+    box-shadow: 1px 1px 3px black;
+    transition: .6s ease-in-out;
+}
+
+.movie-card:hover{
+    font-family: 'Dongle', sans-serif;
+    font-size: 16pt;
+    cursor: pointer;
+    margin: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border: 0px outset black;
+    height: 25px;
+    width: fit-content;
+    color: rgb(184, 122, 8);
+    background-color: rgb(44, 38, 38);
+    border-radius: 14px;
+    box-shadow: 1px 1px 3px black,
+                2px 2px 3px black,
+                3px 3px 4px rgba(58, 57, 57, 0.842);
+}

@@ -1,0 +1,39 @@
+//LOGIN View
+.login-container{
+    font-family: 'Dongle', sans-serif;
+    border: 1px solid black;
+    width: 200px;
+    height: fit-content;
+    border-radius: 14px;
+    padding: 7px;
+    background-color: rgb(51, 48, 48);
+    margin-left: 50px;
+    box-shadow: 1px 1px 3px black,
+                2px 2px 3px black,
+                3px 3px 4px rgba(15, 15, 15, 0.808);
+}
+
+input {
+    font-family: 'Dongle', sans-serif;
+    font-size: 14pt;
+    color: chartreuse;
+    text-align: center;
+    background-color: rgb(22, 21, 21);
+    border: 0px inset black;
+    border-radius: 14px;
+    box-shadow: inset 1px 1px 3px black,
+                inset 2px 2px 3px black,
+                inset 3px 3px 4px rgba(15, 15, 15, 0.808);
+}
+
+button{
+    cursor: pointer;
+    border: 0px outset silver;
+    font-family: 'Dongle', sans-serif;
+    color: chartreuse;
+    background-color: rgb(14, 13, 13);
+    margin-left: 40%;
+    box-shadow: 1px 1px 3px black,
+                2px 2px 3px black,
+                3px 3px 4px rgba(15, 15, 15, 0.808);
+}
