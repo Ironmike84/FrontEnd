@@ -20,5 +20,5 @@
     "save": "^2.4.0"
   },
   "main": "index.js",
-  "description": ""
+  "description": "Movies Application"
 }
