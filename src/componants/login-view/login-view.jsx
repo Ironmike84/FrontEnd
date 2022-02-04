@@ -1,35 +1,34 @@
 //LOGIN View
 import React, { useState } from 'react';
-import './login-view.scss';
-export function LoginView(props) {
-    const [ username, setUsername ] = useState('');
-    const [ password, setPassword ] = useState('');
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
-const handleSubmit = (e) => {
+export function LoginView(props) {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleSubmit = (e) => {
     e.preventDefault();
     console.log(username, password);
-    /* Send a request to the server for authentication */
-    /* then call props.onLoggedIn(username) */
+    // Send a request to the server for authentication, then call props.onLoggedIn(username)
     props.onLoggedIn(username);
-};
+  };
 
-return (
-    <div className='login-container'>
-    <form>
 
-    <label>
-        Username:
-        <input type="text" value={username} onChange={e => setUsername(e.target.value)} /></label>
-        <br></br>
-        <br></br>
-    <label>
-        Password:
-        <input type="password" value={password} onChange={e => setPassword(e.target.value)} /></label>
-        <br></br>
-        <br></br>
-{/* on User input set value of username and password in UseState Const Varibles */}
-            <button type="submit" onClick={handleSubmit}>Submit</button>
-    </form>
-    </div>
-);
+  return (
+    <Form>
+      <Form.Group controlId="formUsername">
+        <Form.Label>Username:</Form.Label>
+        <Form.Control type="text" onChange={e => setUsername(e.target.value)} />
+      </Form.Group>
+
+      <Form.Group controlId="formPassword">
+        <Form.Label>Password:</Form.Label>
+        <Form.Control type="password" onChange={e => setPassword(e.target.value)} />
+      </Form.Group>
+      <Button variant="danger" type="submit" onClick={handleSubmit}>
+        Submit
+      </Button>
+    </Form>
+  );
 }

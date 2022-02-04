@@ -1,13 +1,17 @@
 //MAIN View
 
 body{
-
     color: silver;
-    background-color: black;
+    background-color: rgb(5, 5, 5);
 }
+
 
 img{
     margin-left: 10%;
     height: 375px;
     width: 275px;
+}
+
+#container{
+    border: 1px solid red;
 }

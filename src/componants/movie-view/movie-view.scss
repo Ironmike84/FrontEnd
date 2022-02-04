@@ -1,11 +1,22 @@
 //MOVIE View
 
 .movie-view{
+    color: silver;
+    font-family: 'Dongle', sans-serif;
+    font-size: 16pt;
+    line-height: 16px;
     background-color: rgb(29, 28, 28);
     width: 350px;
+    padding: 7px;
     border-radius: 14px;
     border: 3px solid rgb(185, 182, 182, 0.2);
     box-shadow: 1px 1px 3px black,
                 2px 2px 3px black,
-                3px 3px 6px rgba(0, 0, 0, 0.788);
+                3px 3px 6px rgba(0, 0, 0, 0.788),
+            inset 1px 1px 3px black,
+            inset 1px 2px 3px black,
+            inset 3px 3px 4px black,
+            inset -1px -1px 3px black,
+            inset -1px -2px 3px black,
+            inset -3px -3px 4px black;
 }

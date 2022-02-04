@@ -1,0 +1,21 @@
+.movie-view {
+  background-color: #1d1c1c;
+  width: 350px;
+  border-radius: 14px;
+  border: 3px solid rgba(185, 182, 182, 0.2);
+  box-shadow: 1px 1px 3px black, 2px 2px 3px black, 3px 3px 6px rgba(0, 0, 0, 0.788);
+}
+body {
+  color: silver;
+  background-color: black;
+}
+
+img {
+  margin-left: 10%;
+  height: 375px;
+  width: 275px;
+}
+.my-flix {
+  color: steelblue;
+}
+/*# sourceMappingURL=index.0bad99e4.css.map */
