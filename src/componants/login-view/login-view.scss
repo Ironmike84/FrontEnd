@@ -1,12 +1,12 @@
 //LOGIN View
 .login-container{
     font-family: 'Dongle', sans-serif;
-    border: 1px solid black;
-    width: 200px;
+    border: 1px solid rgb(180, 0, 0);
+    width: 150px;
     height: fit-content;
     border-radius: 14px;
     padding: 7px;
-    background-color: rgb(51, 48, 48);
+    background: linear-gradient(to left, rgb(29, 29, 29) 10%, rgb(26, 25, 25) 45%, rgb(10, 10, 10) 75%);
     margin-left: 50px;
     box-shadow: 1px 1px 3px black,
                 2px 2px 3px black,
@@ -14,6 +14,7 @@
 }
 
 input {
+    width: 150px;
     font-family: 'Dongle', sans-serif;
     font-size: 14pt;
     color: chartreuse;
@@ -26,17 +27,37 @@ input {
                 inset 3px 3px 4px rgba(15, 15, 15, 0.808);
 }
 
-button{
+.danger{
     cursor: pointer;
     border: 0px outset silver;
     font-family: 'Dongle', sans-serif;
     color: chartreuse;
     background-color: rgb(14, 13, 13);
-    margin: 7px;
+    margin-top: 7px;
     width: 75px;
     margin-left: 40%;
     border-radius: 14px;
     box-shadow: 1px 1px 3px black,
                 2px 2px 3px black,
                 3px 3px 4px rgba(15, 15, 15, 0.808);
+}
+form{
+    margin-left: 40%;
+    margin-top: 50px;
+    padding: 15px;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(to left, rgb(29, 29, 29) 10%, rgb(26, 25, 25) 45%, rgb(10, 10, 10) 75%);
+    border: 1px outset rgb(190, 190, 190);
+    border-radius: 15px;
+    height: 300px;
+    width: 250px;
+    box-shadow: 1px 1px 3px black,
+                2px 2px 3px black,
+                3px 3px 6px black;
+}
+.log-out{
+        margin: 10px;
 }

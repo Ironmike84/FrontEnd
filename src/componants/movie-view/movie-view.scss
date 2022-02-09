@@ -1,12 +1,13 @@
 //MOVIE View
 
 .movie-view{
-    color: silver;
+    color: bisque;
     font-family: 'Dongle', sans-serif;
     font-size: 16pt;
     line-height: 16px;
     background-color: rgb(29, 28, 28);
     width: 350px;
+    margin: 6px;
     padding: 7px;
     border-radius: 14px;
     border: 3px solid rgb(185, 182, 182, 0.2);
@@ -19,4 +20,87 @@
             inset -1px -1px 3px black,
             inset -1px -2px 3px black,
             inset -3px -3px 4px black;
+}
+.movie-title{
+    color:bisque;
+    margin-top: 5px;
+    padding: 7px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    background-color: black;
+}
+.movie-description{
+    
+    text-shadow: 1px 1px 2px black,
+                2px 2px 3px black;
+    color: goldenrod;
+    background-color:rgb(43, 41, 41);
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+    padding: 5px;
+    margin-bottom: 7px;
+    box-shadow:inset 1px 1px 3px black,
+inset 1px 2px 3px black,
+inset 3px 3px 4px black;
+}
+.Categorical{
+    padding: 6px;
+    margin-top: 7px;
+    margin-bottom: 10px;
+    border: 1px inset rgb(0, 0, 0);
+    border-radius: 14px;
+    box-shadow: 1px 1px 2px black,
+                2px 2px 3px black,
+                3px 3px 4px black;
+    
+}
+.details{
+    padding: 7px;
+    margin-top: 7px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    background-color: rgb(7, 7, 7);
+    border: 1px inset rgb(0, 0, 0);
+}
+.movie-genre{
+    border: 1px dotted silver;
+}
+.movie-rating{
+    border: 1px dotted silver;
+}
+.movie-director{
+    border: 1px dotted silver;
+}
+.Actors{
+    padding: 6px;
+    margin-top: 7px;
+    margin-bottom: 10px;
+    border-radius: 14px;
+    border: 1px inset rgb(0, 0, 0);
+    box-shadow: 1px 1px 2px black,
+                2px 2px 3px black,
+                3px 3px 4px black;
+}
+.Actors-Title{
+    padding: 5px;
+    margin-top: 7px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    background-color: rgb(7, 7, 7);
+    border: 1px inset rgb(0, 0, 0);
+}
+.Star-Actor{
+    border: 1px dotted silver;
+}
+.Supporting-Actor{
+    border: 1px dotted silver;
+}
+.Cast{
+    border: 1px dotted silver;
+}
+.label{
+    color: goldenrod;
+}
+.value{
+    color: bisque;
 }

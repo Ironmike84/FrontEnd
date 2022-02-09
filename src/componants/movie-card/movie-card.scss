@@ -1,69 +1,35 @@
-//MOVIE Card
-.movie-card{
-    text-align: center;
-    font-family: 'Dongle', sans-serif;
-    font-size: 16pt;
-    text-shadow: 1px 1px 2px black,
-                2px 3px 3px black;
-    cursor: pointer;
-    margin: 10px;
-    padding-left: 7px;
-    padding-right: 12px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border: 0px outset black;
-    height: 25px;
-    width: 150px;
-    color: rgb(184, 122, 8);
-    background-color: rgb(14, 12, 12);
-    border-radius: 14px;
-    box-shadow: inset 1px 1px 2px black,
-                inset 2px 2px 2px black,
-                inset -1px -1px 2px black,
-                inset -2px -2px 2px black,
-                        1px 1px 3px black,
-                        2px 2px 3px black;
-    transition: .6s ease-in-out;
-}
 
-.movie-card:hover{
-    font-family: 'Dongle', sans-serif;
-    font-size: 16pt;
-    text-shadow: 1px 1px 2px black,
-                2px 3px 3px black;
-    cursor: pointer;
-    margin: 10px;
-    padding-left: 7px;
-    padding-right: 12px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border: 0px outset black;
-    height: 25px;
-    width: 150px;
-    color: rgb(184, 122, 8);
-    background-color: rgb(29, 26, 26);
-    border-radius: 14px;
-    box-shadow:
-        inset 1px 1px 2px black,
-        inset 2px 2px 2px black,
-        inset -1px -1px 2px black,
-        inset -2px -2px 2px black,
-                1px 1px 3px black,
-                2px 2px 3px black,
-                3px 3px 4px rgba(219, 0, 0, 0.242),
-                5px 5px 7px rgb(211, 3, 3);
-}
-button{
-    cursor: pointer;
-    border: 0px outset silver;
-    font-family: 'Dongle', sans-serif;
-    color: chartreuse;
-    background-color: rgb(14, 13, 13);
-    margin: 7px;
-    width: 75px;
-    margin-left: 40%;
-    border-radius: 14px;
+// button{
+//     cursor: pointer;
+//     border: 0px outset silver;
+//     font-family: 'Dongle', sans-serif;
+//     color: chartreuse;
+//     background-color: rgb(14, 13, 13);
+//     margin: 7px;
+//     width: 75px;
+//     margin-left: 40%;
+//     border-radius: 14px;
+//     box-shadow: 1px 1px 3px black,
+//                 2px 2px 3px black,
+//                 3px 3px 4px rgba(15, 15, 15, 0.808);
+// }
+.card{
+    background-color:rgb(15, 15, 15);
+    padding: 5px;
+    margin: 5px;
     box-shadow: 1px 1px 3px black,
                 2px 2px 3px black,
-                3px 3px 4px rgba(15, 15, 15, 0.808);
+                3px 3px 6px rgba(0, 0, 0, 0.712);
+}
+
+.btn{
+    box-shadow: 1px 1px 2px rgb(0, 0, 0),
+    2px 2px 3px rgb(19, 18, 18);
+    transition: 1s ease-in-out;
+}
+.btn:hover{
+    box-shadow: 1px 1px 2px rgb(0, 0, 0),
+                2px 2px 3px rgb(0, 0, 0),
+                3px 3px 4px rgba(0, 0, 0, 0.5);
+                transition: .5s ease-in-out;
 }

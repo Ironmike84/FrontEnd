@@ -12,6 +12,7 @@ class MyFlixApplication extends React.Component {
   render() {
     return (
       <Container>
+        <div className='MuVies'>MuVies-App</div>
         <MainView />
       </Container>
     );

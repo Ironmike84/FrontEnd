@@ -1,5 +1,11 @@
-$color: steelblue;
-
-.my-flix {
-  color: $color;
+.MuVies{
+  Color: bisque;
+  background: linear-gradient(to left, rgb(29, 29, 29) 10%, rgb(26, 25, 25) 45%, rgb(10, 10, 10) 75%);
+  width: 100vw;
+  padding: 7px;
+  border-radius: 14px;
+  box-shadow:
+  inset 1px 1px 2px black,
+  inset 2px 2px 3px black,
+  inset 3px 3px 4px rgba(0, 0, 0, 0.678);
 }
