@@ -16,27 +16,51 @@ export class MainView extends React.Component{
         user: null
       };
     }
-    componentDidMount(){
-        axios.get('https://muvies-app.herokuapp.com/Movies')
-          .then(response => {
-            this.setState({
-              movies: response.data
-            });
-          })
-          .catch(error => {
-            console.log(error);
-          });
+    componentDidMount() {
+      let accessToken = localStorage.getItem('token');
+      if (accessToken !== null) {
+        this.setState({
+          user: localStorage.getItem('user')
+        });
+        this.getMovies(accessToken);
+        
       }
-
+    }
+      getMovies(token) {
+        axios.get('https://muvies-app.herokuapp.com/Movies', {
+          headers: { Authorization: `Bearer ${token}`}
+        })
+        .then(response => {
+          // Assign the result to the state
+          this.setState({
+            movies: response.data
+          });
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+      }
       setSelectedMovie(movie) {
         this.setState({
           selectedMovie: movie
         });
       }
 
-      onLoggedIn(user) {
+      onLoggedIn(authData) {
+        console.log(authData);
         this.setState({
-          user
+          user: authData.user.Username
+        });
+      
+        localStorage.setItem('token', authData.token);
+        localStorage.setItem('user', authData.user.Userame);
+        this.getMovies(authData.token);
+      }
+      onLoggedOut() {
+        localStorage.removeItem('token');
+        localStorage.removeItem('user');
+        this.setState({
+          user: null
         });
       }
       render() {
@@ -48,17 +72,20 @@ export class MainView extends React.Component{
     if (movies.length === 0) return <div className="main-view" />;
 
     return (
+        
         <div className="main-view">
+             <button class='btn btn-danger' style={{margin:'10px'}} onClick={() => { this.onLoggedOut() }}>Logout</button>
         {/*If the state of `selectedMovie` is not null, that selected movie will be returned otherwise, all *movies will be returned*/}
         {selectedMovie
           ? (<Row className="justify-content-md-center">
-            <Col md={4}>
+         
+            <Col md={4} >
           <MovieView movie={selectedMovie} onBackClick={newSelectedMovie => { this.setSelectedMovie(newSelectedMovie); }}/>
           </Col>
           </Row>
           )
           : (
-          <Row className="justify-content-md-center">
+          <Row className="justify-content-md-center" >
             {movies.map(movie => 
           (<MovieCard key={movie._id} movie={movie} onMovieClick={(newSelectedMovie) => { this.setSelectedMovie(newSelectedMovie) }}/>
           ))}
