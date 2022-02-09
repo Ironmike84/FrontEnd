@@ -183,6 +183,10 @@ img {
   border-radius: 14px;
   box-shadow: 1px 1px 3px black, 2px 2px 3px black;
 }
+
+.UsersName {
+  color: orangered;
+}
 .MuVies {
   Color: bisque;
   background: linear-gradient(to left, #1d1d1d 10%, #1a1919 45%, #0a0a0a 75%);

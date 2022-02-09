@@ -1,18 +1,179 @@
+.card {
+  background-color: #0f0f0f;
+  padding: 5px;
+  margin: 5px;
+  box-shadow: 1px 1px 3px black, 2px 2px 3px black, 3px 3px 6px rgba(0, 0, 0, 0.712);
+}
 
+.btn {
+  box-shadow: 1px 1px 2px black, 2px 2px 3px #131212;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  box-shadow: 1px 1px 2px black, 2px 2px 3px black, 3px 3px 4px rgba(0, 0, 0, 0.5);
+  transition: 0.5s ease-in-out;
+}
 .movie-view {
-  color: silver;
+  color: bisque;
   font-family: "Dongle", sans-serif;
   font-size: 16pt;
   line-height: 16px;
   background-color: #1d1c1c;
   width: 350px;
+  margin: 6px;
   padding: 7px;
   border-radius: 14px;
   border: 3px solid rgba(185, 182, 182, 0.2);
   box-shadow: 1px 1px 3px black, 2px 2px 3px black, 3px 3px 6px rgba(0, 0, 0, 0.788), inset 1px 1px 3px black, inset 1px 2px 3px black, inset 3px 3px 4px black, inset -1px -1px 3px black, inset -1px -2px 3px black, inset -3px -3px 4px black;
 }
+
+.movie-title {
+  color: bisque;
+  margin-top: 5px;
+  padding: 7px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  background-color: black;
+}
+
+.movie-description {
+  text-shadow: 1px 1px 2px black, 2px 2px 3px black;
+  color: goldenrod;
+  background-color: #2b2929;
+  border-bottom-right-radius: 14px;
+  border-bottom-left-radius: 14px;
+  padding: 5px;
+  margin-bottom: 7px;
+  box-shadow: inset 1px 1px 3px black, inset 1px 2px 3px black, inset 3px 3px 4px black;
+}
+
+.Categorical {
+  padding: 6px;
+  margin-top: 7px;
+  margin-bottom: 10px;
+  border: 1px inset black;
+  border-radius: 14px;
+  box-shadow: 1px 1px 2px black, 2px 2px 3px black, 3px 3px 4px black;
+}
+
+.details {
+  padding: 7px;
+  margin-top: 7px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  background-color: #070707;
+  border: 1px inset black;
+}
+
+.movie-genre {
+  border: 1px dotted silver;
+}
+
+.movie-rating {
+  border: 1px dotted silver;
+}
+
+.movie-director {
+  border: 1px dotted silver;
+}
+
+.Actors {
+  padding: 6px;
+  margin-top: 7px;
+  margin-bottom: 10px;
+  border-radius: 14px;
+  border: 1px inset black;
+  box-shadow: 1px 1px 2px black, 2px 2px 3px black, 3px 3px 4px black;
+}
+
+.Actors-Title {
+  padding: 5px;
+  margin-top: 7px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  background-color: #070707;
+  border: 1px inset black;
+}
+
+.Star-Actor {
+  border: 1px dotted silver;
+}
+
+.Supporting-Actor {
+  border: 1px dotted silver;
+}
+
+.Cast {
+  border: 1px dotted silver;
+}
+
+.label {
+  color: goldenrod;
+}
+
+.value {
+  color: bisque;
+}
+.login-container {
+  font-family: "Dongle", sans-serif;
+  border: 1px solid #b40000;
+  width: 150px;
+  height: fit-content;
+  border-radius: 14px;
+  padding: 7px;
+  background: linear-gradient(to left, #1d1d1d 10%, #1a1919 45%, #0a0a0a 75%);
+  margin-left: 50px;
+  box-shadow: 1px 1px 3px black, 2px 2px 3px black, 3px 3px 4px rgba(15, 15, 15, 0.808);
+}
+
+input {
+  width: 150px;
+  font-family: "Dongle", sans-serif;
+  font-size: 14pt;
+  color: chartreuse;
+  text-align: center;
+  background-color: #161515;
+  border: 0px inset black;
+  border-radius: 14px;
+  box-shadow: inset 1px 1px 3px black, inset 2px 2px 3px black, inset 3px 3px 4px rgba(15, 15, 15, 0.808);
+}
+
+.danger {
+  cursor: pointer;
+  border: 0px outset silver;
+  font-family: "Dongle", sans-serif;
+  color: chartreuse;
+  background-color: #0e0d0d;
+  margin-top: 7px;
+  width: 75px;
+  margin-left: 40%;
+  border-radius: 14px;
+  box-shadow: 1px 1px 3px black, 2px 2px 3px black, 3px 3px 4px rgba(15, 15, 15, 0.808);
+}
+
+form {
+  margin-left: 40%;
+  margin-top: 50px;
+  padding: 15px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(to left, #1d1d1d 10%, #1a1919 45%, #0a0a0a 75%);
+  border: 1px outset #bebebe;
+  border-radius: 15px;
+  height: 300px;
+  width: 250px;
+  box-shadow: 1px 1px 3px black, 2px 2px 3px black, 3px 3px 6px black;
+}
+
+.log-out {
+  margin: 10px;
+}
+
 body {
-  color: silver;
+  color: bisque;
   background-color: #050505;
 }
 
@@ -20,8 +181,19 @@ img {
   margin-left: 10%;
   height: 375px;
   width: 275px;
+  border-radius: 14px;
+  box-shadow: 1px 1px 3px black, 2px 2px 3px black;
 }
-.my-flix {
-  color: steelblue;
+
+.UsersName {
+  color: orangered;
+}
+.MuVies {
+  Color: bisque;
+  background: linear-gradient(to left, #1d1d1d 10%, #1a1919 45%, #0a0a0a 75%);
+  width: 100vw;
+  padding: 7px;
+  border-radius: 14px;
+  box-shadow: inset 1px 1px 2px black, inset 2px 2px 3px black, inset 3px 3px 4px rgba(0, 0, 0, 0.678);
 }
 /*# sourceMappingURL=index.e546d5a1.css.map */
